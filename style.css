@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background-color: #F3F5FC;
+}
+
+textarea{
+    border: none;
+    resize: none;
+}
+
+#logo {
+    padding-top: 10px;
+}
+
+.textContainer {
+    margin: 20px
+}
+
+.textContainer #inputText {
+    width: 100%;
+    background-color: #F3F5FC;
+    color: #0A3871;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.textContainer #exclamation {
+    line-height: 0;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+button{
+    margin: 10px;
+    font-size: 24px;
+    border-radius: 16px;
+    border: solid #0A3871 1px;
+    padding: 10px 20px;
+    background-color:#F3F5FC ;
+    color: #0A3871
+}
+
+ button:hover {
+    background-color: #dbdbdb ;
+}
+
+button:active {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.buttons button:first-of-type {
+    background-color: #0A3871;
+    color: white;
+}
+
+.final-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 20px 0;
+}
+
+.final-container #finalMessage {
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 700px) {
+    .buttons{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .buttons button {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1060px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px 50px;
+        height: 80vh;
+    }
+
+    .first-container {
+    width: 70vw;
+    }
+
+    .textContainer {
+        height: 80%;
+    }
+    .textContainer #inputText{
+        height: 90%;
+    }
+
+    .final-container #finalMessage{
+        height: 100%;
+    }
+
+    
+}
