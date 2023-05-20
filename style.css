@@ -114,6 +114,9 @@ button:active {
 
     .final-container #finalMessage{
         height: 100%;
+        background-image: url(assets/High\ quality\ products\ 1\ 1.svg);
+        background-repeat: no-repeat;
+        background-position: 0% 100%;
     }
 
     

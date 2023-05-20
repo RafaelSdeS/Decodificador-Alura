@@ -27,6 +27,8 @@ criptButton.addEventListener('click', () => {
         }
         criptMessage += elem
     });
+    finalMessage.style.backgroundImage = "url()"
+
     finalMessage.value = criptMessage
 })
 
@@ -39,6 +41,8 @@ decriptButton.addEventListener('click', () => {
     decriptText = decriptText.replace(/ober/g, 'o');
     decriptText = decriptText.replace(/ufat/g, 'u');
 
+    finalMessage.style.backgroundImage = "url()"
+
     finalMessage.value = decriptText
     
 })
@@ -49,10 +53,13 @@ copyBtn.addEventListener('click', () => {
     navigator.clipboard.writeText(finalMessage.value)
 })
 
-textArea.addEventListener('oninput', () => {
-    if (textArea.value.trim() === "") {
-        image.style.display = "block";
-      } else {
-        image.style.display = "none";
-      }
-})
+function check() {
+    console.log('ola')
+    if(finalMessage.textContent) {
+        finalMessage.style.backgroundImage = "url('assets/High\ quality\ products\ 1\ 1.svg')"
+    } else {
+        finalMessage.style.backgroundImage = "url()"
+    }
+}
+
+check()
